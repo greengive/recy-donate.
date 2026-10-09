@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="GreenGive - Recycle and Donate useful items to create a cleaner and greener community.">
+
+    <title>GreenGive | Recycle & Donate</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0fff4;
+            color: #234;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 10px #00000012;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #218c55;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #234;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #218c55;
+        }
+
+        .hero {
+            padding: 70px 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 35px;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #185b3a;
+        }
+
+        .hero p {
+            font-size: 17px;
+            margin-bottom: 25px;
+        }
+
+        .hero-image {
+            flex: 1;
+            min-width: 260px;
+            text-align: center;
+            font-size: 110px;
+            background: #d9f9e4;
+            padding: 45px 20px;
+            border-radius: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #218c55;
+            color: white;
+            padding: 12px 22px;
+            text-decoration: none;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background: #176c40;
+        }
+
+        .secondary {
+            background: white;
+            color: #218c55;
+            border: 1px solid #218c55;
+        }
+
+        section {
+            padding: 55px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            color: #185b3a;
+            margin-bottom: 15px;
+        }
+
+        .section-description {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 3px 12px #0000000d;
+        }
+
+        .card .icon {
+            font-size: 45px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            color: #218c55;
+            margin-bottom: 10px;
+        }
+
+        #donate {
+            background: #e1f8e9;
+        }
+
+        .form-container {
+            max-width: 650px;
+            margin: 25px auto 0;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px #00000010;
+        }
+
+        .form-container label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        .form-container input,
+        .form-container select,
+        .form-container textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccd8ce;
+            border-radius: 7px;
+            font-size: 15px;
+        }
+
+        .form-container textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .form-container button {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .notice {
+            max-width: 650px;
+            margin: 15px auto;
+            padding: 15px;
+            background: #fff8d9;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: #185b3a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                gap: 15px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .hero {
+                padding-top: 45px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">♻ GreenGive</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#recycle">Recycle</a>
+            <a href="#donate">Donate</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <p><strong>REUSE • RECYCLE • DONATE</strong></p>
+
+                <h1>Give Things a Second Life.</h1>
+
+                <p>
+                    Recycle unwanted materials and donate useful items
+                    to people who need them. Together, we can reduce waste
+                    and create a cleaner, greener community.
+                </p>
+
+                <a href="#recycle" class="btn">Start Recycling</a>
+                <a href="#donate" class="btn secondary">Donate Now</a>
+            </div>
+
+            <div class="hero-image" aria-label="Earth illustration">
+                🌍
+                <h3>Small Actions.<br>Big Impact.</h3>
+            </div>
+        </section>
+
+        <!-- RECYCLE -->
+        <section id="recycle">
+            <h2 class="section-title">What Can You Recycle?</h2>
+
+            <p class="section-description">
+                Give unwanted items a new purpose instead of throwing them away.
+            </p>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="icon">📚</div>
+                    <h3>Books</h3>
+                    <p>Donate books and educational materials for others to use.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">👕</div>
+                    <h3>Clothes</h3>
+                    <p>Pass on wearable clothes to people who need them.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🧸</div>
+                    <h3>Toys</h3>
+                    <p>Give usable toys a second life with another family.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🪑</div>
+                    <h3>Household Items</h3>
+                    <p>Donate usable household goods instead of discarding them.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DONATION FORM -->
+        <section id="donate">
+            <h2 class="section-title">Donate Your Items</h2>
+
+            <p class="section-description">
+                Fill in the form below to tell us about the items you want to donate.
+            </p>
+
+            <div class="form-container">
+
+                <!-- NETLIFY FORM STARTS HERE -->
+                <form name="donation"
+                      method="POST"
+                      data-netlify="true">
+
+                    <input type="hidden" name="form-name" value="donation">
+
+                    <label for="fullname">Full Name</label>
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="full_name"
+                        placeholder="Enter your full name"
+                        required>
+
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+
+                    <label for="phone">Mobile Number</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your mobile number"
+                        required>
+
+                    <label for="item">Item to Donate</label>
+                    <select id="item" name="item" required>
+                        <option value="">Select an item</option>
+                        <option value="Clothes">Clothes</option>
+                        <option value="Books">Books</option>
+                        <option value="Toys">Toys</option>
+                        <option value="Household Items">Household Items</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <label for="quantity">Quantity</label>
+                    <input
+                        type="number"
+                        id="quantity"
+                        name="quantity"
+                        min="1"
+                        placeholder="Enter quantity"
+                        required>
+
+                    <label for="condition">Item Condition</label>
+                    <select id="condition" name="condition" required>
+                        <option value="">Select condition</option>
+                        <option value="New">New</option>
+                        <option value="Good">Good</option>
+                        <option value="Usable">Usable</option>
+                    </select>
+
+                    <label for="address">Pickup Address</label>
+                    <textarea
+                        id="address"
+                        name="address"
+                        placeholder="Enter pickup address"
+                        required></textarea>
+
+                    <label for="message">Additional Information</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Any additional details (optional)"></textarea>
+
+                    <button type="submit" class="btn">
+                        Submit Donation
+                    </button>
+
+                </form>
+                <!-- NETLIFY FORM ENDS HERE -->
+
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section id="how-it-works">
+            <h2 class="section-title">How It Works</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="icon">📝</div>
+                    <h3>1. Fill the Form</h3>
+                    <p>Enter your details and the items you wish to donate.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">📦</div>
+                    <h3>2. Prepare Items</h3>
+                    <p>Make sure your donated items are safe and usable.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🌱</div>
+                    <h3>3. Make a Difference</h3>
+                    <p>Help reduce waste and support your community.</p>
+                </div>
+            </div>
+
+            <p class="notice">
+                Note: Submitting this form records a donation request.
+                It does not automatically arrange collection or confirm a pickup.
+            </p>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <h2 class="section-title">About GreenGive</h2>
+
+            <p class="section-description">
+                GreenGive encourages people to reuse, recycle and donate
+                useful items. Our goal is to reduce waste, conserve resources
+                and build a more caring and environmentally responsible community.
+            </p>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 GreenGive | Reuse • Recycle • Donate</p>
+        <p>Small Actions. Big Impact.</p>
+    </footer>
+
+</body>
+</html>
